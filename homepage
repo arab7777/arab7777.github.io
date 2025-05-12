@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expert Challenge</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #007acc;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Expert Challenge</h1>
+    <p>Level up your skills through real-world challenges</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#join">Join Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Expert Challenge</h2>
+    <p>Expert Challenge is a platform where developers, designers, and problem solvers can sharpen their skills by tackling curated challenges and competing with others.</p>
+  </section>
+
+  <section id="challenges">
+    <h2>Featured Challenges</h2>
+    <ul>
+      <li>Build a responsive portfolio website</li>
+      <li>Design a mobile app prototype</li>
+      <li>Automate a real-world task with Python</li>
+    </ul>
+  </section>
+
+  <section id="join">
+    <h2>Join the Challenge</h2>
+    <p>Ready to put your skills to the test? <a href="mailto:join@expertchallenge.io">Sign up</a> to receive weekly challenges and join a growing community of experts.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out at <a href="mailto:support@expertchallenge.io">support@expertchallenge.io</a>.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Expert Challenge</p>
+  </footer>
+</body>
+</html>
