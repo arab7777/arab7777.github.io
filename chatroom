@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <h2>Welcome, <span id="usernameDisplay"></span>!</h2>
+
+    <div id="chat-box" class="chat-box"></div>
+
+    <form onsubmit="sendMessage(event)" class="message-form">
+      <input type="text" id="messageInput" placeholder="Type your message..." required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script>
+    const chatBox = document.getElementById('chat-box');
+    const username = localStorage.getItem('chatUsername') || 'Anonymous';
+
+    document.getElementById('usernameDisplay').textContent = username;
+
+    function sendMessage(event) {
+      event.preventDefault();
+      const messageInput = document.getElementById('messageInput');
+      const message = messageInput.value.trim();
+
+      if (message) {
+        const msgDiv = document.createElement('div');
+        msgDiv.className = 'message';
+        msgDiv.innerHTML = `<strong>${username}:</strong> ${message}`;
+        chatBox.appendChild(msgDiv);
+        messageInput.value = '';
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }
+    }
+  </script>
+</body>
+</html>
